@@ -147,6 +147,7 @@ header h3 {
 .food-item {
     flex: 1 1 calc(50% - 20px); /* Change 25% to 50% for better layout on smaller screens */
     margin: 10px;
+    flex-direction:row;
     text-align: center;
     transition: transform 0.3s;
 }
@@ -177,28 +178,3 @@ header h3 {
     height: auto;
 }
 
-@media (max-width: 768px), (height: 768px) {
-    .food-items {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .food-item {
-        flex: 1 1 100%;
-        margin: 10px 0;
-    }
-}
-
-@media (min-width: 600px) {
-    .images img {
-        width: calc(50% - 5px);
-        margin-bottom: 10px;
-    }
-}
-
-@media (min-width: 900px) {
-    .images img {
-        width: calc(25% - 5px);
-        margin-bottom: 0;
-    }
-}
