@@ -1,90 +1,81 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+@import url('common.css');
+.contacts {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.contact-container {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-}
-
-h1 {
+    align-items: center;
     text-align: center;
-    margin-bottom: 20px;
+    background-color: #1f2b21; 
+    background-size:contain;
+    background-position: center;
+    color: white;
 }
 
-.contact-info, .contact-form {
-    margin-bottom: 20px;
+.images {
+    display: flex;
 }
 
-.contact-info h2, .contact-form h2 {
-    background-color: #ffecb3;
-    color: #333;
-    padding: 10px;
-    margin: 0;
-    border-radius: 5px;
+.images img {
+    width: 380px; 
+    height: 380px; 
+    margin-right: 1px; 
+
+}
+.contacts {
+background-color: #1f2b21;
+      padding: 160px 20px;
+    text-align: center;
+    color: #e8e8e8;
 }
 
-.contact-form form {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.contacts h1{
+    size: 4em;
+    text-decoration: underline;
+    line-height: 100px;
 }
 
-.contact-form .form-group {
-    margin-bottom: 15px;
+.contacts-para p{
+    font-size: large;
+    color: white;
+    line-height: 50px;
+
+}
+.contacts form {
+    display:flexbox ;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    color: #fff;
+    line-height: 45px;
 }
 
-.contact-form label {
+
+.contacts form label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
-.contact-form input, .contact-form textarea {
+.contacts form input,
+.contacts form textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.contact-form button {
+.contacts form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.contact-form button:hover {
+.contacts form button:hover {
     background-color: #555;
 }

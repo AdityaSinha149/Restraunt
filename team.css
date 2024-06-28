@@ -1,55 +1,65 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
+@import url('common.css');
+body{
+    background-color: #1f2b21;
+    background-size: cover;
+    background: #1f2b21;
+    text-align: left;
+    
+.team {
+   
+height: 100%;
     color: #fff;
-    padding: 10px 0;
+    padding: 50px 20px;
     text-align: center;
+   
+}
+    
+   
+}
+.team h1{
+    size: 4em;
+    text-decoration: underline;
+    line-height: 90px;
+    margin-top: 120px;
+   
+
+    
 }
 
-header nav ul {
+
+.team-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 10px;
+}
+    
+
+.team-info,
+.team-list {
+    flex: 1;
+    margin: 20px;
+    text-align: left;
+    
+}
+
+.team-info p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+   text-align: left;
+}
+
+.team-list ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+   
 }
 
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.team-container {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.team-member {
-    background-color: #ffecb3;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.team-member h3 {
-    margin: 0;
+.team-list ul li {
+    margin-bottom: 10px;
+   
 }

@@ -45,6 +45,9 @@ nav {
 }
 
 @media (max-width: 768px) {
+    .navigation-bar {
+        flex-direction: column;
+    }
 
     .navigation-bar li {
         margin: 10px 0;
