@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="contact.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="navigation-bar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -17,33 +17,31 @@
             </ul>
         </nav>
     </header>
-    <div class="contact-container">
-        <h1>Contact Us</h1>
-        <div class="contact-info">
-            <h2>Our Address</h2>
-            <p>123 Restaurant Street, Food City, FC 12345</p>
-        </div>
-        <div class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" required>
+    <div id="contacts" class="contacts">
+        <div class="contacts-text">
+            <h1>Contact US</h1>
+            </div>
+            <div class="contacts-para">
+                <p>Place an order at : 95xxxxxxxx</p>
+                <p>Email : <a href="mailto:restaurantwebsite@gmail.com">restaurantwebsite@gmail.com</a></p>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" rows="4" required></textarea>
-                </div>
-                <button type="submit">Send</button>
-            </form>
-        </div>
+       
+        <h3>Reviews and Reservations</h3>
+        <form action="submit_review">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+            <br>
+            <label>Review/ Queries:</label>
+            <textarea  name="review"></textarea>
+            <br>
+            <label >Reservation Date:</label>
+            <input type="date"  name="reservation">
+            <br>
+            <button type="submit">Submit</button>
+        </form>
     </div>
-    <footer>
-        <p>&copy; 2023 Restaurant</p>
-    </footer>
 </body>
 </html>
