@@ -1,81 +1,56 @@
 @import url('common.css');
-.contacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+  background-color: #1f2b21;
+color: #ffffff;
+}
+.menu {
+    padding: 70px 20px;
     text-align: center;
-    background-color: #1f2b21; 
-    background-size:contain;
-    background-position: center;
-    color: white;
-}
-
-.images {
-    display: flex;
-}
-
-.images img {
-    width: 380px; 
-    height: 380px; 
-    margin-right: 1px; 
 
 }
-.contacts {
-background-color: #1f2b21;
-      padding: 160px 20px;
-    text-align: center;
-    color: #e8e8e8;
-}
 
-.contacts h1{
-    size: 4em;
+.menu h1 {
+    margin-bottom: 30px;
     text-decoration: underline;
-    line-height: 100px;
+    margin-top: 120px;
 }
 
-.contacts-para p{
-    font-size: large;
-    color: white;
-    line-height: 50px;
-
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
 }
-.contacts form {
-    display:flexbox ;
-    max-width: 600px;
-    margin: 0 auto;
+
+.menu-item img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.menu-item div {
+    flex: 1;
     text-align: left;
-    color: #fff;
-    line-height: 45px;
 }
 
-
-.contacts form label {
-    display: block;
-    margin-bottom: 5px;
+.menu-item span {
     font-weight: bold;
 }
 
-.contacts form input,
-.contacts form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-.contacts form button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    .menu-item img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 
-.contacts form button:hover {
-    background-color: #555;
+    .menu {
+        padding-top: 100px;
+    }
 }
